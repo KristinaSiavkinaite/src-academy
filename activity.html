@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Activity</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/content/styles/site-styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/content/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/content/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/content/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/src/content/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/chf3btc.css">
+</head>
+<body>
+<%include src="../../components/header/header.html"%>
+  <div class="full-page-layout">
+      <div class="full-page-layout__filter">
+        <%include src="activity-filter-bar.html"%>
+      </div>
+      <div class="full-page-layout__content full-page-layout__content--margin-top js-likes">
+          <div class="full-page-layout__wrapper">
+            <div class="activity-feed">
+                <div class="activity-feed__card">
+                  <article class="card">
+                    <div class="card__header">
+                      <div class="mind-form">
+                        <input type="text" class="mind-input" placeholder="What’s on your mind ?">
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content events">
+                  <a href="#" class="card-link">
+                    <article class="card card-birthday ">
+                      <div class="card__header card-birthday__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-post-card-elijah-chang.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author card__header-author--birthday">Elijah Chang</h5>
+                            <time class="card__header-date card__header-date--birthday">Today</time>
+                          </div>
+                        </div>
+                        <div class="card-birthday__icon-bday"></div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card  ">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-post-card-elijah-chang.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Elijah Chang</h5>
+                            <time class="card__header-date">April 14d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Successful Agile Releases: Manage Risk, Not Plans</h4>
+                        <p class="card__body-text">Since the beginning of software development, project managers have been trying to tame&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-post-card-dragon.png" alt="Three dragons: left dragon says scope, middle dragon watching straight, right dragon says cost">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">11</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments">
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number">21</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-post-card-elijah-chang.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Elijah Chang</h5>
+                            <time class="card__header-date">April 15d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Successful Agile Releases: Manage Risk, Not Plans</h4>
+                        <p class="card__body-text">Since the beginning of software development, project managers have been trying to tame&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-post-card-dragon.png" alt="Three dragons: left dragon says scope, middle dragon watching straight, right dragon says cost">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">59</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">15</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <a href="#" class="card-link">
+                                  <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                </a>
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card  ">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-facebook.png" alt="Facebook post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group</h5>
+                            <time class="card__header-date">April 14d</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <p class="card__body-text">The DB team had a great time at the VU Vilnius University career fair yesterday. Thanks to everyone who stopped by!</p>
+                        <img class="card__body-photo" src="/images/activity-page-devbridge-group.png" alt="6 Devbridge employees standing with Devbridge logo t-shirts">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">0</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">0</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+<!--
+                      <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card card-twitter">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-twitter.png" alt="Twitter post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group @devbridge</h5>
+                            <time class="card__header-date">April 10D</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <h4 class="card__body-heading card__body-heading--twitter">It's Day 1 of the <span><a href="#" class="activity-post-link">@HIMSS</a></span> exhibition & our team is working the crowd! <span><a href="#" class="activity-post-link">#HIMSS15</a></span> Booth 7658</h4>
+                    </div>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">31</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">30</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card  ">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                        <img class="card__header-author-face" src="/images/activity-page-facebook.png" alt="Facebook post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group</h5>
+                            <time class="card__header-date">April 9D</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <p class="card__body-text">We are proud to announce that Devbridge Group has garnered four awards as part of&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-page-hermes.png" alt="Flyer Hermes creative awards">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">19</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">18</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+<!--
+                      <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-post-card-elijah-chang.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Elijah Chang</h5>
+                            <time class="card__header-date">April 10d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Be Confident and Know Your Value</h4>
+                        <p class="card__body-text">At Devbridge Group, we value collaboration and giving back through thought leadership.</p>
+                        <img class="card__body-photo" src="/images/activity-page-be-confident.png" alt="Man talking with 2 women in Devbridge event">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">37</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">27</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content events">
+                  <a href="#" class="card-link">
+                    <article class="card card-birthday  ">
+                      <div class="card__header card-birthday__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-post-card-elijah-chang.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author card__header-author--birthday">Elijah Chang</h5>
+                            <time class="card__header-date card__header-date--birthday">Today</time>
+                          </div>
+                        </div>
+                        <div class="card-birthday__icon-bday"></div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card card-twitter">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-twitter.png" alt="Twitter post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group @devbridge</h5>
+                            <time class="card__header-date">April 6d</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <h4 class="card__body-heading card__body-heading--twitter">Don't know how to visualize big data & predict machine tool failure? We take the guesswork out of it. <span><a href="#" class="activity-post-link">#Manufacturing</a></span> <span><a href="#" class="activity-post-link">http://bit.ly/1IyRhda</a></span></h4>
+                    </div>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">31</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">30</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-facebook.png" alt="Facebook post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group</h5>
+                            <time class="card__header-date">April 9d</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <p class="card__body-text">How did shifting to an online and mobile ordering system allow <span><a href="#" class="activity-post-link">Sarpino's Pizzeria</a></span>, Chicago's fastest growing pizza chain, to compete with the top brands? <span><a href="#" class="activity-post-link">http://bit.ly/18Omnkg</a></span> 1to1 Media</p>
+                    </div>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">21</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">18</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content events">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Kristin Duhaime</h5>
+                            <time class="card__header-date">April 7d</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Geeks in Portland</h4>
+                        <p class="card__body-text">Portland, Oregon was unfamiliar ground to us all. We'd heard the buzz, seen Portlandia&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-page-geeks.png" alt="Women speaking at the conference and showing presentation on big screen">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">0</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">0</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-mark-ludemann.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Mark Ludemann</h5>
+                            <time class="card__header-date">April 4d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Material Design and What Can Be Learned From It.</h4>
+                        <p class="card__body-text">Back in July of this year, Google unveiled their new version of Android, called Lollipop, and a whole&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-page-material-design.png" alt="Man speaking at the conference and showing presentation on a big screen">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">31</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">30</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-brad-wechter.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Brad Wechter</h5>
+                            <time class="card__header-date">April 6d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">A Recap of Our Week Exploring, Learning & Having Fun in Lithuania</h4>
+                        <p class="card__body-text">Over the course of a week, we’ve all become richer for our experiences. Some of us took a few&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-page-recap.png" alt="People having fun at the pool">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">24</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">11</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-aurimas-adomavicius.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Aurimas Adomavicius</h5>
+                            <time class="card__header-date">April 6d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Devbridge Group At Techweek: Healthcare Apps on the Cloud</h4>
+                        <p class="card__body-text">TechWeek Chicago is a week-long technology conference that occupies a whole floor of the&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-page-healthcare.png" alt="Man speaking at the conference">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">14</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">16</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content blog">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-aurimas-adomavicius.png" alt="">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Aurimas Adomavicius</h5>
+                            <time class="card__header-date">April 2d</time>
+                          </div>
+                        </div>
+                        <div class="card-category">
+                          <h6 class="card-category__text">Blog</h6>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="card-link">
+                      <div class="card__body">
+                        <h4 class="card__body-heading">Efficiently Growing Your Development to Meet New Needs</h4>
+                        <p class="card__body-text">You know the phrase, "Many hands make light work"?  With development work, that&hellip;</p>
+                        <img class="card__body-photo" src="/images/activity-page-growing.png" alt="3 people watching something on their computers and discussing in the office room">
+                      </div>
+                    </a>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">12</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">10</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-facebook.png" alt="Facebook post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group</h5>
+                            <time class="card__header-date">April 2d</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <p class="card__body-text">We implemented a global website and product catalog for Mazak, the largest machine tool manufacturer in the world. Watch it all here. <span><a href="#" class="activity-post-link">http://bit.ly/1s3sv0u</a></span></p>
+                    </div>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">19</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">18</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+                <div class="activity-feed__card js-filter-content social">
+                  <article class="card card-twitter">
+                    <a href="#" class="card-link">
+                      <div class="card__header">
+                        <div class="card__header-main">
+                          <img class="card__header-author-face" src="/images/activity-page-twitter.png" alt="Twitter post">
+                          <div class="card__header-text">
+                            <h5 class="card__header-author">Devbridge Group @devbridge</h5>
+                            <time class="card__header-date">April 12D</time>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <h4 class="card__body-heading card__body-heading--twitter">We've got our eyes on the <span><a href="#" class="activity-post-link">#MoxieAwards</a></span>! Show your support of <span><a href="#" class="activity-post-link">#DevbridgeGroup</a></span> by voting each day until April 30th-thx! <span><a href="#" class="activity-post-link">http://bit.ly/1b9UqW4</a></span> </h4>
+                    </div>
+
+                    <div class="comment-box">
+                      <div class="comment-box__header">
+                        <button type="button" class="likes__box">
+                          <div class="likes__number js-likes-number">31</div>
+                          Likes
+                        </button>
+                        <button type="button" class="comment-box__header-comments js-comments"  >
+                          <img class="comment-box__comment-icon" src="/images/activity-post-comment-sign.png" alt="" >
+                          <div class="comment-box__comment-number js-comment-score">30</div>
+                          <div class="comment-box__comment-text">Comments</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="comments__drop js-comments-drop">
+                        <form action="" class="write-comment js-form">
+                          <img class="write-comment__author-face" src="/images/activity-post-elijah-chang.png" alt="">
+                          <input type="text" class="write-comment__input js-new-item-add-comment" placeholder="Write a comment...">
+                          <button type="button" class="write-comment__button--is-hidden"></button>
+                        </form>
+
+                        <div class="comment-scroll js-comment-delete">
+                          <div class="">
+                            <article class="comment js-list">
+                              <div class="comment__post">
+                                <img class="comment__author-face" src="/images/activity-post-kristin-duhaime.png" alt="">
+                                <div class="comment__body">
+                                  <h6 class="comment__author">Kristin Duhaime</h6>
+                                  <p class="comment__text">Quisque quis suscipit nulla. Curabitur non elit ornare, consequat elit nec, pretium orci. Nunc quis sem nec dolor dignissim varius a ac est. Vestibulum facilisis, felis.</p>
+                                </div>
+                              </div>
+                              <img class="comment-parts-seperator" src="/images/activity-post-seperator-horizontal.png" alt="">
+                              <div class="comment-footer">
+                                <button type="button" class="likes__box likes__box-in-comment">
+                                  <div class="likes__number js-likes-number">15</div>
+                                    Likes
+                                </button>
+                                <time class="comment-footer__date">5 min ago</time>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </article>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/content/scripts/main.js"></script>
+
+  </body>
+</html>

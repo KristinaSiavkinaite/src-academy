@@ -1,0 +1,139 @@
+$card-width: 380px;
+
+@mixin cardText($font-size: 16px, $line-height: 20.7px, $text-transform: uppercase, $font-weight: 400) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  width: $card-width;
+  border-radius: 2px;
+  border: 1px solid #e6e7e8;
+  background-color: $white;
+
+    @media screen and (max-width: 400px) and (min-width: 341px) {
+      width: 320px;
+    }
+
+    @media screen and (max-width: 400px) {
+      margin-left: 25px;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: 350px) {
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: 340px) {
+      width: 300px;
+    }
+
+  &__header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header-main {
+    display: flex;
+  }
+
+  &__header-author-face {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+
+    &--big {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__header-author {
+    @include cardText($text-transform: none, $font-weight: 700);
+    height: 14px;
+    color: $black;
+    margin: 31px 0px 4px 0px;
+
+    @media screen and (max-width: 340px) {
+      font-size: 15px;
+    }
+
+    &--birthday {
+      @include cardText($text-transform: none);
+      color: $white;
+
+      @media screen and (max-width: 340px) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__header-date {
+    @include cardText($font-size: 12px);
+    height: 9px;
+    color: $light-grey;
+
+    &--birthday {
+      color: $white;
+    }
+  }
+
+  &__header-position {
+    @include cardText($font-size: 12px);
+    height: 8px;
+    color: #30a1d6;
+  }
+}
+
+.card-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 61px;
+    height: 30px;
+    border-radius: 2px 0 0 2px;
+    background-color: $light-blue;
+    margin-top: 30px;
+
+  &__text {
+    @include cardText($font-size: 12px, $line-height: 16.1px);
+    color: $white;
+  }
+
+  @media screen and (max-width: 340px) {
+    width: 50px;
+  }
+}
+
+.card__body-heading {
+  @include cardText($font-size: 17px, $line-height: 22px, $text-transform: none, $font-weight: 600);
+  color: $black;
+  margin: 0px 17px 17px 17px;
+
+  &--twitter {
+    font-style: italic;
+    color: #13191b;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.card__body-text {
+  @include cardText($font-size: 15px, $line-height: 20px, $text-transform: none);
+  color: #7b8487;
+  margin: 0px 17px 20px 17px;
+}
+
+.card__body-photo {
+  margin-bottom: -7px;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Notifications</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/content/styles/site-styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/content/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/content/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/content/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/src/content/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/chf3btc.css">
+</head>
+<body>
+<%include src="../../components/header/header.html"%>
+
+
+<div class="full-page-layout">
+  <div class="full-page-layout__filter full-page-layout__filter--notifications-page">
+    <div class="full-page-layout__wrapper">
+      <div class="notifications-filter">
+          <p class="notifications-filter__form-name">Select activities:</p>
+          <div class="notifications-filter__input-section js-checked">
+            <label class="notifications-filter__input" for="likes">
+              <input type="checkbox" value="likes" id="likes" /> Likes
+            </label>
+            <label class="notifications-filter__input" for="comments">
+              <input type="checkbox" value="comments" id="comments" /> Comments
+            </label>
+            <label class="notifications-filter__input" for="devbridge">
+              <input type="checkbox" value="devbridge" id="devbridge" /> Devbridge News
+            </label>
+            <label class="notifications-filter__input" for="internal">
+              <input type="checkbox" value="internal" id="internal" /> Internal messages
+            </label>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-page-layout__content full-page-layout__content--margin-bottom">
+    <div class="full-page-layout__wrapper">
+
+        <!-- notification date -->
+        <div class="notifications-list js-notification" data-category="internal likes comments">
+          <h4 class="notifications-list__heading">Today</h4>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 1 item -->
+        <div class="notifications-list js-notification" data-category="internal">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--bell"></div>
+              <div class="notifications-list__item-cake">
+                <div class="notifications-list__item-cake-bg"></div>
+                <div class="notifications-list__item-cake-inner"></div>
+              </div>
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__item-text">Happy Birthday</div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Simas Aleksandravičius</a>
+              </div>
+            </div>
+            <time class="notifications-list__item-time">15:00</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+      <!-- 2 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--heart"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-elijah-chang.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Elijah Chang</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Breaking The Pattern In The Web Design</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">twitter post</div>
+            </div>
+            <time class="notifications-list__item-time">09:34</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+      <!-- 3 item -->
+        <div class="notifications-list js-notification" data-category="comments">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+            <div class="notifications-list__item-action-sign notifications-list__item-action-sign--comment"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-arturas-aleksandrovas.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Artūras Aleksandrovas</a>
+                  <div class="notifications-list__item-text">commented on</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Illustrating the Power of the Lithuanian Tech Powerhouse</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">blog post</div>
+            </div>
+            <time class="notifications-list__item-time">15:00</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+      <!-- 4 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--comment"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-mantas-kunsmanas.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Mantas Kunsmanas</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Advantages of Globally Distributed Teams</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">blog post</div>
+            </div>
+            <time class="notifications-list__item-time">14:20</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- notification date -->
+        <div class="notifications-list js-notification" data-category="devbridge likes comments">
+          <h4 class="notifications-list__heading">March 14</h4>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 1 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--heart"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-vaclovas-vicius.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Vaclovas Vičius</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">The Devbridge Wavelength: February and March Update</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">twitter post</div>
+            </div>
+            <time class="notifications-list__item-time">20:11</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 2 item -->
+        <div class="notifications-list js-notification" data-category="devbridge">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--bell"></div>
+              <div class="notifications-list__mediaq-div-2">
+                <div class="notifications-list__item-text notifications-list__item-text--news">You were assigned to a new project</div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Devbridge Intranet</a>
+              </div>
+            </div>
+            <time class="notifications-list__item-time">15:00</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 3 item -->
+        <div class="notifications-list js-notification" data-category="comments">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--comment"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-arturas-aleksandrovas.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Artūras Aleksandrovas</a>
+                  <div class="notifications-list__item-text">commented on</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Product Owners – Behind the Velvet Rope</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">facebook post</div>
+            </div>
+            <time class="notifications-list__item-time">09:34</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- notification date -->
+        <div class="notifications-list js-notification" data-category="internal likes devbridge">
+          <h4 class="notifications-list__heading">March 10</h4>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 1 item -->
+        <div class="notifications-list js-notification" data-category="devbridge">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--bell"></div>
+              <div class="notifications-list__mediaq-div-2">
+                <div class="notifications-list__item-text notifications-list__item-text--news">You were assigned to a new team</div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Alberta’s Team</a>
+              </div>
+            </div>
+            <time class="notifications-list__item-time">14:20</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 2 item -->
+        <div class="notifications-list js-notification" data-category="internal">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--bell"></div>
+              <div class="notifications-list__mediaq-div-2">
+                <div class="notifications-list__item-text notifications-list__item-text--news">Congratulations! You’ve unlocked new achievement </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">10k Run</a>
+              </div>
+            </div>
+            <time class="notifications-list__item-time">16:15</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 3 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--heart"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-mantas-kunsmanas.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Mantas Kunsmanas</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Advantages of Globally Distributed Teams</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">blog post</div>
+            </div>
+            <time class="notifications-list__item-time">19:20</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 4 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--heart"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-vaclovas-vicius.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Vaclovas Vičius</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">The Devbridge Wavelength: February and March Update</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">blog post</div>
+            </div>
+            <time class="notifications-list__item-time">18:15</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- notification date -->
+        <div class="notifications-list js-notification" data-category="likes devbridge">
+          <h4 class="notifications-list__heading">March 4</h4>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 1 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--heart"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-mantas-kunsmanas.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Mantas Kunsmanas</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Advantages of Globally Distributed Teams</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">blog post</div>
+            </div>
+            <time class="notifications-list__item-time">12:32</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 2 item -->
+        <div class="notifications-list js-notification" data-category="devbridge">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+            <div class="notifications-list__item-action-sign notifications-list__item-action-sign--bell"></div>
+              <div class="notifications-list__mediaq-div-2">
+                <div class="notifications-list__item-text notifications-list__item-text--news">You were assigned to a new team</div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Alberta’s Team</a>
+              </div>
+            </div>
+            <time class="notifications-list__item-time">7:34</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+        <!-- 3 item -->
+        <div class="notifications-list js-notification" data-category="likes">
+          <div class="notifications-list__item">
+            <div class="notifications-list__item-action">
+              <div class="notifications-list__item-action-sign notifications-list__item-action-sign--heart"></div>
+              <img class="notifications-list__item-author-face" src="/images/notifications-page-vaclovas-vicius.png" alt="">
+              <div class="notifications-list__mediaq-div-1">
+                <div class="notifications-list__mediaq-div-2">
+                  <a class="notifications-list__item-text notifications-list__item-text--link" href="#">Vaclovas Vičius</a>
+                  <div class="notifications-list__item-text">liked</div>
+                </div>
+                <a class="notifications-list__item-text notifications-list__item-text--link" href="#">The Devbridge Wavelength: February and March Update</a>
+              </div>
+              <div class="notifications-list__item-text notifications-list__item-text--post">blog post</div>
+            </div>
+            <time class="notifications-list__item-time">15:12</time>
+          </div>
+          <div class="notifications-list__item-seperator"></div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/content/scripts/main.js"></script>
+
+</body>
+</html>
